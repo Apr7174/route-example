@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>test program for routing</title>
+</head>
+<body>
+	<h1>Test For Routing - Waitstaff Calculator</h1>
+	<!-- worked when removed html from links -->
+	<a ng-href='#!/'>Home</a>
+	<a href='#!/new-meal'>New Meal</a>
+	<a href="#!/my-earnings">My Earnings</a>
+	<a ng-href='#!/city' ng-click="printCity()">City</a>
+
+    <div ng-view></div>
+
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
